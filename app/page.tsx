@@ -75,7 +75,7 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#projects">Explore my work <ArrowRight size={17} /></a>
-            <a className="button button-secondary" href="mailto:allanjohn.valiente@gmail.com">Send Email <ArrowUpRight size={17} /></a>
+            <a className="button button-secondary" href="mailto:allanjohn.valiente@gmail.com">Let’s talk <ArrowUpRight size={17} /></a>
           </div>
           <div className="hero-meta">
             <span><MapPin size={15} /> Toronto, Ontario</span>
