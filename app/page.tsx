@@ -68,7 +68,7 @@ export default function Home() {
     <main className="site-shell">
       <section className="hero section-wrap" id="home">
         <div className="hero-copy">
-          <div className="eyebrow"><span className="status-dot" /> SOFTWARE DEVELOPER <span className="eyebrow-divider">/</span> TORONTO, CANADA</div>
+          <div className="eyebrow"><span className="status-dot" /> FULL-STACK DEVELOPER <span className="eyebrow-divider">/</span> TORONTO, CANADA</div>
           <h1>I build useful software <span>from idea to launch.</span></h1>
           <p className="hero-intro">
             I’m Allan John Valiente — a developer with experience across web applications, APIs, booking experiences, and mobile development. I enjoy turning real-world requirements into software that feels clear, reliable, and easy to use.
