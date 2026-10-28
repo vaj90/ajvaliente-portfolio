@@ -46,6 +46,8 @@ jobs:
   deploy-production:
     name: Deploy to Vercel (production)
     runs-on: ubuntu-latest
+    # Wait for approval from a reviewer configured in GitHub Settings > Environments.
+    environment: production
     timeout-minutes: 20
     needs: quality-checks
     # Deployment only runs for direct pushes to the production branch.
