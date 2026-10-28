@@ -1,9 +1,13 @@
-
-name: AJ Valiente Portfolio to Vercel
+name: Allan John Valiente Portfolio CI/CD
 
 on:
   push:
     branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
       - master
   workflow_dispatch:
 
@@ -11,36 +15,81 @@ permissions:
   contents: read
 
 concurrency:
-  group: portfolio-production
+  group: portfolio-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    name: Build and Deploy
+  quality-checks:
+    name: Lint and build
     runs-on: ubuntu-latest
-
-    env:
-      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    timeout-minutes: 15
 
     steps:
-      - name: Checkout repository
+      - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Build Next.js application
+        run: npm run build
+
+  deploy-production:
+    name: Deploy to Vercel (production)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: quality-checks
+    # Deployment only runs for direct pushes to the production branch.
+    # Pull requests run checks only, so deployment secrets are not exposed to PR code.
+    if: >-
+      github.event_name == 'push' &&
+      (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
 
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
 
+      - name: Link project to Vercel
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          test -n "$VERCEL_ORG_ID" || (echo "Missing GitHub secret: VERCEL_ORG_ID" && exit 1)
+          test -n "$VERCEL_PROJECT_ID" || (echo "Missing GitHub secret: VERCEL_PROJECT_ID" && exit 1)
+          mkdir -p .vercel
+          printf '{"orgId":"%s","projectId":"%s"}\n' "$VERCEL_ORG_ID" "$VERCEL_PROJECT_ID" > .vercel/project.json
+
       - name: Pull Vercel production settings
-        run: vercel pull --yes --environment=production
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          test -n "$VERCEL_TOKEN" || (echo "Missing GitHub secret: VERCEL_TOKEN" && exit 1)
+          vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
 
-      - name: Build portfolio
-        run: vercel build --prod
+      - name: Build for Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel build --prod --token="$VERCEL_TOKEN"
 
-      - name: Deploy to production
-        run: vercel deploy --prebuilt --prod
+      - name: Deploy prebuilt output to production
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN"
