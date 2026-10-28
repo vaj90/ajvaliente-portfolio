@@ -21,7 +21,7 @@ export default function HeaderNav() {
       <div className="nav-inner">
         <Link className="brand-lockup" href="/" aria-label="Allan John Valiente home" onClick={() => setMenuOpen(false)}>
           <span className="brand-mark"><Code2 size={20} /></span>
-          <span className="brand-name">ALLAN JOHN <b>VALIENTE</b><small>SOFTWARE DEVELOPER</small></span>
+          <span className="brand-name">ALLAN JOHN <b>VALIENTE</b><small>FULL-STACK DEVELOPER</small></span>
         </Link>
         <button className="mobile-menu-toggle" type="button" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={21} /> : <Menu size={21} />}
