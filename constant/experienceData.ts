@@ -1,0 +1,125 @@
+const experienceEntry = [
+  {
+    role: "Web Application Developer (Part-time)",
+    company: "Kababayan Multicultural Centre",
+    location: "Toronto, Canada",
+    dates: "June 2019 – September 2024",
+    type: "PROFESSIONAL",
+    image: "/images/kababayan.png",
+    details: [
+    "Developed and implemented a triggered email solution on the client registration page to improve the distribution of client information to support workers and counsellors.",
+    "Implemented chatbot functionality and automated customer inquiry workflows to improve communication and support for website users.",
+    "Conducted user testing to identify usability issues and implemented improvements based on user feedback and observed user behaviour.",
+    "Contributed to the revamp of the organization's website, improving user interface, functionality, navigation, and overall user experience.",
+    "Collaborated with program and content teams to understand requirements and implement website enhancements supporting community programs and services.",
+    "Provided ongoing website maintenance, troubleshooting, and technical support to help ensure reliable website operations.",
+  ],
+    tech: ["JavaScript", "WordPress", "SEO", "UI/UX"],
+  },
+  {
+    role: "Junior IOS Developer (Full-time | Remote)",
+    company: "Orange and Crane Innovation Inc",
+    location: "Mandaluyong City, Philippines",
+    dates: "April 2023 – April 2024",
+    type: "PROFESSIONAL",
+    image: "/images/orange-crane.gif",
+    details: [
+    "Collaborated with cross-functional team members to implement application designs, enhancements, and new features.",
+    "Implemented and integrated application functionality based on technical and functional requirements.",
+    "Developed and executed unit tests to identify, troubleshoot, and resolve application defects.",
+    "Participated in debugging and quality assurance activities to improve application stability and functionality.",
+  ],
+    tech: ["Swift", "IOS", "Unit Testing", "Git"],
+  },
+  {
+    role: "Senior Web Application Developer",
+    company: "TFISolutions Inc",
+    location: "Makati City, Philippines",
+    dates: "August 2013 - March 2019",
+    type: "PROFESSIONAL",
+    image: "/images/tfi-solutions-logo.png",
+    details: [
+    "Designed, developed, and maintained responsive and progressive web applications supporting business and customer-facing requirements.",
+    "Developed front-end and back-end functionality to introduce new features, enhance existing capabilities, and improve application usability.",
+    "Integrated SSO and Web APIs to support secure authentication and communication between application components and external systems.",
+    "Led development activities for ASP.NET Core and React Native projects supporting API implementation, integration, and technical development.",
+    "Implemented and integrated third-party technologies, including booking engines, JavaScript libraries, jQuery widgets, and .NET packages.",
+    "Collaborated with development team members to troubleshoot technical issues and implement application enhancements.",
+    "Supported technical research and solution evaluation to identify appropriate tools, frameworks, plugins, and packages for project requirements.",
+    "Contributed to responsive UI development and cross-device compatibility to improve customer-facing application experiences.",
+  ],
+    tech: ["C#", "ASP.NET MVC/Core", "React Native", "jQuery", "Web API"],
+  },
+];
+const volunteerEntry = [
+  {
+    role: "Web Developer Freelance",
+    company: "Wholeness Massage Therapy",
+    location: "Toronto, Canada",
+    dates: "November 2025 – December 2025",
+    type: "VOLUNTEER",
+    image: "/images/wmt.jpg",
+    details: [
+    "Customized and enhanced the website using Wix, focusing on layout, navigation, functionality, and user experience. ",
+    "Implemented responsive design improvements for a consistent experience across devices",
+  ],
+    tech: ["HTML5", "CSS3", "JavaScript", "Wix Builder"],
+  },
+  {
+    role: "Web Developer (Volunteer/Freelance)",
+    company: "Blessed Cleaning Experts",
+    location: "Toronto, Canada",
+    dates: "July 2025 – August 2025",
+    type: "VOLUNTEER",
+    image: "/images/bce.png", 
+    details: [
+    "Designed and developed a responsive website using Node.js, Express.js, Pug, and Bootstrap.",
+    "Built structured page layouts and reusable components to present services and business information effectively.",
+  ],
+    tech: ["HTML5", "CSS3", "Responsive Design","Node.js", "Express.js", "Pug", "Bootstrap"],
+  },
+  {
+    role: "Web Developer (Volunteer)",
+    company: "Vaughan Drivers",
+    location: "Toronto, Canada",
+    dates: "July 2025 (1 month)",
+    type: "VOLUNTEER",
+    image: "/images/vd.png",
+    details: [
+    "Designed and developed a responsive driving school website using Node.js, Express.js, Pug, and Bootstrap.",
+    "Integrated the Stripe API to support online payment functionality.",
+    "Developed user-focused content and page layouts for G1/G2 examination resources and driving school services.",
+  ],
+    tech: ["HTML5", "CSS3", "JavaScript","Node.js", "Express.js", "Pug", "Bootstrap", "Stripe API"],
+  },
+  {
+    role: "Web Developer (Volunteer)",
+    company: "Grace Through Faith",
+    location: "Toronto, Canada",
+    dates: "January 2025 - July 2025",
+    type: "VOLUNTEER",
+    image: "/images/gtf.png",
+    details: [
+      "Executed design and layout improvements to enhance user experience and functionality.",
+      "Provided customized website pages, including successful integration of external services like YouTube and a Bible application.",
+    ],
+    tech: ["Node.js", "Express.js", "Pug", "Bootstrap", "UI/UX", "JavaScript", "HTML5", "CSS3"],
+  },
+  {
+    role: "Computer Assistant",
+    company: "Kababayan Multicultural Centre",
+    location: "Toronto, Canada",
+    dates: "August 2019 - December 2019",
+    type: "VOLUNTEER",
+    image: "/images/kababayan.png",
+    details: [
+      "Provided technical assistance to participants during computer classes and community programs.",
+      "Assisted seniors with basic computer applications and technology-related activities.",
+    ],
+    tech: ["Technical Support", "Training"],
+  },
+];
+
+export const allExperience = [...experienceEntry, ...volunteerEntry];
+export { volunteerEntry };
+export const professionalExperience = experienceEntry;
