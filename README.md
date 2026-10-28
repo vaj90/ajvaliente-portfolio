@@ -1,75 +1,112 @@
 
-# Hi, I'm AJ Valiente 👋
+# AJ Valiente | Developer Portfolio
 
-### Full-Stack Developer | Web & Mobile Application Developer
+Welcome to my personal portfolio repository! 👋
 
-I'm a software developer passionate about building responsive websites, scalable web applications, REST APIs, and database-driven solutions. I enjoy solving problems through technology and creating efficient, user-friendly digital experiences.
+I'm a Full-Stack Developer with experience in web and mobile application development, API integration, database management, and software support. I enjoy building practical, responsive, and user-friendly digital solutions.
 
-## 🛠️ Tech Stack
-
-- **Frontend:** React, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS
-- **Backend:** Node.js, REST APIs, GraphQL
-- **Databases:** MySQL, MariaDB, MongoDB
-- **Mobile Development:** iOS Development, Swift
-- **Tools:** Git, GitHub, Docker, Swagger
+🌐 **GitHub Profile:** [@vaj90](https://github.com/vaj90)
 
 ## 🚀 About This Project
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This repository contains the source code for my personal developer portfolio, built with Next.js. It showcases my development background, technical skills, and projects.
+
+### ✨ Highlights
+
+- Responsive portfolio website
+- Modern React and Next.js architecture
+- TypeScript development
+- Project and skills showcase
+- Professional contact and profile links
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/)
+- **Library:** [React](https://react.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** CSS / Tailwind CSS, depending on the project configuration
 
 ## 💻 Getting Started
 
-First, install the project dependencies:
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed
+- npm, yarn, pnpm, or bun
+- Git
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/vaj90/ajvaliente-portfolio.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd ajvaliente-portfolio
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+Changes to the source files will appear as you develop.
+
+## 📦 Production Build
+
+Build the application for production:
 
 ```bash
-npm install
+npm run build
 ```
 
-Then, run the development server:
+To run the production build locally, if the corresponding script exists in `package.json`:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page automatically updates as you edit the file.
+```text
+ajvaliente-portfolio/
+├── app/           # Application pages and layouts
+├── components/    # Reusable UI components
+├── public/        # Static assets and images
+├── README.md      # Project documentation
+└── package.json   # Dependencies and scripts
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to optimize and load [Geist](https://vercel.com/font), a font family created for Vercel.
+## 🎯 Development Goals
 
-## 📌 Features & Development Goals
+- Showcase my software development experience.
+- Present selected personal and professional projects.
+- Demonstrate clean, maintainable code.
+- Continuously improve performance, accessibility, and user experience.
 
-- Build modern, responsive user interfaces.
-- Develop reusable React components.
-- Integrate REST APIs and external services.
-- Create scalable and maintainable web applications.
-- Optimize performance and user experience.
+## 📚 Resources
 
-## 📚 Learn More
-
-Explore these resources to learn more about Next.js:
-
-- [Next.js Documentation](https://nextjs.org/docs) — Learn about Next.js features and APIs.
-- [Learn Next.js](https://nextjs.org/learn) — An interactive Next.js tutorial.
-- [Next.js GitHub Repository](https://github.com/vercel/next.js) — Explore the source code and contribute.
-
-## 🚀 Deploy on Vercel
-
-The easiest way to deploy your Next.js application is through the [Vercel Platform](https://vercel.com/new).
-
-For more details, see the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 
 ## 📫 Connect With Me
 
-- **GitHub:** [@YOUR_GITHUB_USERNAME](https://github.com/vaj90)
-- **Portfolio:** [YOUR_PORTFOLIO_URL](https://YOUR_PORTFOLIO_URL)
+- **GitHub:** [github.com/vaj90](https://github.com/vaj90)
+- **Portfolio Source Code:** [ajvaliente-portfolio](https://github.com/vaj90/ajvaliente-portfolio)
 
 ---
 
-⭐ Thanks for visiting my profile and project! Feel free to explore my repositories and connect with me.
+⭐ Thank you for visiting my repository!
