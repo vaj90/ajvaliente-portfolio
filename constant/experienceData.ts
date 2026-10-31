@@ -11,10 +11,9 @@ const experienceEntry = [
     "Implemented chatbot functionality and automated customer inquiry workflows to improve communication and support for website users.",
     "Conducted user testing to identify usability issues and implemented improvements based on user feedback and observed user behaviour.",
     "Contributed to the revamp of the organization's website, improving user interface, functionality, navigation, and overall user experience.",
-    "Collaborated with program and content teams to understand requirements and implement website enhancements supporting community programs and services.",
-    "Provided ongoing website maintenance, troubleshooting, and technical support to help ensure reliable website operations.",
+    "Collaborated with program and content teams to understand requirements and implement website enhancements supporting community programs and services."
   ],
-    tech: ["JavaScript", "WordPress", "SEO", "UI/UX"],
+    tech: ["JavaScript", "Wix", "SEO", "UI/UX"],
   },
   {
     role: "Junior IOS Developer (Full-time | Remote)",

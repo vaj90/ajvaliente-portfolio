@@ -50,7 +50,7 @@ const featuredProjects = [
       "Website improvements for community and service organizations, with attention to accessible navigation, useful content, and responsive layouts.",
     image: "/images/kababayan.png",
     imageAlt: "Kababayan Multicultural Centre logo",
-    tags: ["JavaScript", "WordPress", "UI/UX", "Maintenance"],
+    tags: ["JavaScript", "WIX", "UI/UX", "Maintenance"],
     tone: "project-community",
   },
 ];

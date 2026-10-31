@@ -17,6 +17,15 @@ const projects = [
     stack: ["JavaScript", "REST APIs", "Responsive UI", "Booking workflows"],
   },
   {
+    name: "Fly to Asia",
+    label: "TRAVEL · WEB APPLICATIONS",
+    image: "/images/flytoasia.webp",
+    alt: "Fly to Asia logo",
+    description: "A travel-focused web application for browsing flight options, booking flights, and managing customer accounts.",
+    contribution: "This is my last project with MangoTours, where I contributed to the development of the web application, focusing on flight search, booking flows, and user account management.",
+    stack: ["JavaScript", "REST APIs", "Responsive UI", "ASP.NET Core"],
+  },
+  {
     name: "Vaughan Drivers",
     label: "CLIENT PROJECT · PAYMENT INTEGRATION",
     image: "/images/vd.png",
@@ -41,7 +50,7 @@ const projects = [
     alt: "Kababayan Multicultural Centre logo",
     description: "Website enhancements supporting community programs, client registration, and clearer digital communication.",
     contribution: "Contributed to website updates, triggered email workflows, chatbot functionality, usability testing, and ongoing maintenance.",
-    stack: ["JavaScript", "WordPress", "UI/UX", "Workflow automation"],
+    stack: ["JavaScript", "Wix", "UI/UX", "Workflow automation"],
   },
   {
     name: "Wholeness Massage Therapy",
@@ -60,6 +69,24 @@ const projects = [
     description: "Website improvements that made pages and external resources easier to access for visitors.",
     contribution: "Implemented page layout changes and integrated external resources, including video and Bible application content.",
     stack: ["Node.js", "Express.js", "Pug", "JavaScript"],
+  },
+  {
+    name: "MangoTours mobile app",
+    label: "TRAVEL · MOBILE APPLICATION",
+    image: "/images/mango-logo.png",
+    alt: "MangoTours mobile app logo",
+    description: "Mobile application for travel bookings, designed to provide a seamless experience for users to browse and book tours and transfers.",
+    contribution: "Supported the development of the mobile application, focusing on user functionality and integration with existing web services.",
+    stack: ["Swift", "UIKit", "iOS Development", "Mobile App", "REST APIs", "React Native", "Hybrid Development"],
+  },
+  {
+    name: "Ahente Mobile",
+    label: "BUSINESS · MOBILE APPLICATION",
+    image: "/images/ahente.jpeg",
+    alt: "Ahente Mobile logo",
+    description: "B2B Application in mobile and web platforms for a local business, focused on improving usability and accessibility for users.",
+    contribution: "In charged of Native iOS development as junior iOS developer.",
+    stack: ["Swift", "UIKit", "iOS Development", "Mobile App"],
   },
 ];
 
